@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="hero-section text-center py-5 mb-4" style="background: linear-gradient(135deg, #6f42c1, #a855f7); border-radius: 20px; color: white;">
-  <h1 class="display-4 fw-bold">Hubungi Kami</h1>
-  <p class="lead">Kami siap menjawab pertanyaan Anda dan memberikan informasi yang dibutuhkan!</p>
+<div class="hero-section text-center py-5 mb-4" style="background-image: url('{{ asset('image/kontak.jpg') }}'); background-size: cover; background-position: center; border-radius: 20px; color: white; position: relative;">
+    <h1 class="display-4 fw-bold text-white">Hubungi Kami</h1>
+    <p class="lead">Kami siap menjawab pertanyaan Anda dan memberikan informasi yang dibutuhkan!</p>
 </div>
 
 <div class="content-card">

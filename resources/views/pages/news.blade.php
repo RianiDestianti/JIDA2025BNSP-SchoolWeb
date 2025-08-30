@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="hero-section text-center py-5 mb-4" style="background: linear-gradient(135deg, #dc3545, #ff6b6b); border-radius: 20px; color: white;">
-  <h1 class="display-4 fw-bold">Berita Terbaru</h1>
-  <p class="lead">Dapatkan informasi terkini tentang kegiatan dan pengumuman Sekolah Kita!</p>
+<div class="hero-section text-center py-5 mb-4" style="background-image: url('{{ asset('image/berita.jpg') }}'); background-size: cover; background-position: center; border-radius: 20px; color: white; position: relative;">
+    <h1 class="display-4 fw-bold text-white">Berita Terbaru</h1>
+    <p class="lead">Dapatkan informasi terkini tentang kegiatan dan pengumuman Sekolah Kita!</p>
 </div>
 
 <div class="content-card">
@@ -17,9 +17,7 @@
           <p class="card-text">{{ Str::limit($n->content, 150) }}</p>
           <small class="text-muted">Diposting: {{ $n->created_at->format('d M Y') }}</small>
         </div>
-        <div class="card-footer bg-transparent border-0">
-          <a href="{{ route('news', $n->id) }}" class="btn btn-primary btn-sm" style="border-radius: 20px;">Baca Selengkapnya</a>
-        </div>
+       
       </div>
     </div>
     @endforeach

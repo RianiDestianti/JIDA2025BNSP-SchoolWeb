@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="text-center hero-section py-5" style="background: linear-gradient(135deg, #007bff, #00c4ff); border-radius: 20px; color: white;">
-  <h1 class="display-4 fw-bold">Selamat Datang di Sekolah Kita</h1>
-  <p class="lead">Website resmi untuk informasi sekolah, kegiatan, berita terbaru, dan kontak.</p>
-  <a href="{{ route('about') }}" class="btn btn-light btn-lg mt-3" style="border-radius: 25px;">Pelajari Lebih Lanjut</a>
+<div class="text-center hero-section py-5" style="background-image: url('{{ asset('image/sekolah.jpg') }}'); background-size: cover; background-position: center; border-radius: 20px; color: white; position: relative;">
+    <h1 class="display-4 fw-bold text-white">Selamat Datang di Sekolah Kita</h1>
+    <p class="lead">Website resmi untuk informasi sekolah, kegiatan, berita terbaru, dan kontak.</p>
+    <a href="{{ route('about') }}" class="btn btn-light btn-lg mt-3" style="border-radius: 25px;">Pelajari Lebih Lanjut</a>
 </div>
 
 <h3 class="mt-5 fw-bold">Berita Terbaru</h3>

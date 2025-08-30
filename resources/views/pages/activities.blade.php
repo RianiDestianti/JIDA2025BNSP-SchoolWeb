@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="hero-section text-center py-5 mb-4" style="background: linear-gradient(135deg, #ffc107, #ffca2c); border-radius: 20px; color: white;">
-  <h1 class="display-4 fw-bold">Kegiatan Sekolah</h1>
-  <p class="lead">Ikuti berbagai kegiatan seru dan mendidik di Sekolah Kita!</p>
+<div class="hero-section text-center py-5 mb-4" style="background-image: url('{{ asset('image/kegiatan.jpg') }}'); background-size: cover; background-position: center; border-radius: 20px; color: white; position: relative;">
+    <h1 class="display-4 fw-bold text-white">Kegiatan Sekolah</h1>
+    <p class="lead">Ikuti berbagai kegiatan seru dan mendidik di Sekolah Kita!</p>
 </div>
 
 <div class="content-card">
@@ -17,9 +17,7 @@
           <h5 class="card-title fw-semibold">{{ $activity->title }}</h5>
           <p class="card-text">{{ Str::limit($activity->description, 120) }}</p>
         </div>
-        <div class="card-footer bg-transparent border-0">
-          <a href="{{ route('activities', $activity->id) }}" class="btn btn-primary btn-sm" style="border-radius: 20px;">Lihat Detail</a>
-        </div>
+       
       </div>
     </div>
     @endforeach
