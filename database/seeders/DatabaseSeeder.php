@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             ActivitySeeder::class,
             NewsSeeder::class,
+            ContactMessageSeeder::class,
         ]);
     }
 
